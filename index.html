@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Book Store</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	</head>
+	<body>
+		<header>
+			<img class="logo" src="images/logo.png " alt="logo">
+			<nav>
+				<ul class="nav_links">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="product.html">SHOP</a></li>
+					<li><a href="My Cart.html">MY CART</a></li>
+					<li><a href="account.html">ACCOUNT</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn"><a href="javascript:void(0);" >
+				<i class="fa fa-bars"></i></button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#featured1" id="featured">Featured Books</a>
+				<a href="#best-selling" id="best-selling1">Best Selling</a>
+				<a href="#popular-books" id="popular">Popular Books</a>
+				<a href="#offer" id="offer1">Best with Offer</a>
+
+			</div>
+		  </div>
+		  
+		  <script>
+		  /* When the user clicks on the button, 
+		  toggle between hiding and showing the dropdown content */
+		  function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		  }
+		  
+		  // Close the dropdown if the user clicks outside of it
+		  window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+			  var dropdowns = document.getElementsByClassName("dropdown-content");
+			  var i;
+			  for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+				  openDropdown.classList.remove('show');
+				}
+			  }
+			}
+		  }
+		  </script>
+		  
+
+
+		<div class="container">
+			<img src="images/headerbg.jpg" class="headerbg">
+			<div class="text_block"> 
+				<h1>The more that you read,the more things you will know. <br>The more that you learn, the more places you will go. <br>-Dr. Seuss</h1>	
+			</div>
+		</div>
+		<section>
+			<div class="container_1">
+				<div class="row">
+					<div class="inner-content">
+						<div class="logo-wrap">
+							<div class="grid">
+								<a href="flaprise.com"><img src="images/client-image2.png" alt="client"></a>
+								<a href="bookstore.com"><img src="images/client-image3.png" alt="client"></a>
+								<a href="bookdoor.com"><img src="images/client-image4.png" alt="client"></a>
+								<a href="library.com"><img src="images/client-image5.png" alt="client"></a>
+							</div>
+						</div><!--image-holder-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="featured1">
+		<section class="bookshelf">
+			<div class="container_1">
+				<div class="row">
+					<div class="inner-content">
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Some quality items</span>
+						</div>
+						<h2 class="section-title">Featured Books</h2>
+					</div>
+				</div>
+					<div class="product-list" data-aos="fade-up">
+						<div class="product-grid">	
+							<div class="grid">
+												
+							<figure class="product-style">
+								<img src="images/product-item1.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Simple way of piece life</h3>
+									<p>Armor Ramsey</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+						
+							<figure class="product-style">
+								<img src="images/product-item2.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Great travel at desert</h3>
+									<p>Sanchit Howdy</p>
+									<div class="item-price">$ 38.00</div>
+								</figcaption>
+							</figure>
+		
+							<figure class="product-style">
+								<img src="images/product-item3.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>The lady beauty Scarlett</h3>
+									<p>Arthur Doyle</p>
+									<div class="item-price">$ 45.00</div>
+								</figcaption>
+							</figure>
+											
+							<figure class="product-style">
+								<img src="images/product-item4.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Once upon a time</h3>
+									<p>Klien Marry</p>
+									<div class="item-price">$ 35.00</div>
+								</figcaption>
+							</figure>
+											
+							<figure class="product-style">
+								<img src="images/product-item6.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Life of Seacrites</h3>
+									<p>Galista Marie</p>
+									<div class="item-price">$ 35.00</div>
+								</figcaption>
+							</figure>
+							</div>
+						</div><!--ft-books-slider-->				
+					</div><!--grid-->
+		
+					<div class="btn-wrap align-right">
+						<a href="product.html" class="btn-accent-arrow">View all products <i class="icon icon-ns-arrow-right"></i></a>
+					</div>
+		
+					</div><!--inner-content-->
+				</div>
+			</div>
+		</section>
+		<section id="best-selling" class="leaf-pattern-overlay">
+			<div class="corner-pattern-overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="inner-content">
+					<div class="product-element">
+						<div class="grid">
+							<figure class="products-thumb">
+								<img src="images/gentle.jpg" alt="book" class="single-image">
+							</figure>
+							<div class="product-entry">
+								<h2 class="section-title divider"> Best Selling Book</h2>
+		
+								<div class="products-content">
+									<div class="author-name">By Bianca Sparacino</div>
+									<h3 class="item-title">A Gentle Reminder</h3>
+									<p class="text">A gentle reminder, for the days you feel light in this world, and for the days in which the sun rises a little slower. A gentle reminder for when your heart is full of hope, and for when you are learning how to heal it. A gentle reminder for when you finally begin to trust in the goodness, and for when you need the kind of words that hug your broken pieces back together. A gentle reminder for when growth hangs heavy in the air, for when you need to tuck your strength into your bones just to make it to tomorrow. A gentle reminder for when you are balancing the messiness, and the beauty, of what it means to be human, when you are teaching yourself that it is okay to be both happy and sad, that you are real, not perfect. A gentle reminder for when you seek the words you needed when you were younger. A gentle reminder for when you need to hear that you deserve to be loved the way you love others. A gentle reminder for when you need to recognize that you are not your past, that you are not your faults. A gentle reminder for when you need to believe in staying soft, in continuing to be the kind of person who cares. A gentle reminder for when you need to believe in loving deeply in a world that sometimes fails to do so. A gentle reminder to keep going. A gentle reminder to hope.
+										A gentle reminder, for you.
+										Take what you need.</p>
+									<div class="item-price">$ 45.00</div>
+									<div class="btn-wrap">
+										<a href="product.html" class="btn-accent-arrow">shop it now <i class="icon icon-ns-arrow-right"></i></a>
+									</div>
+								</div><!--description-->
+		
+							</div>
+						</div><!--grid-->
+					</div>
+					</div><!--inner-content-->
+				</div>
+			</div>
+		</section>
+		<div id="popular-books">
+		<section class="bookshelf">
+			<div class="container">
+			<div class="row">
+				<div class="inner-content">
+		
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Some quality items</span>
+						</div>
+						<h2 class="section-title">Popular Books</h2>
+					</div>
+				</div>
+			</div>
+					  <div id="business" data-tab-content>
+						  <div class="grid">
+							  <figure class="product-style">
+								<img src="images/tab-item5.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Peaceful Enlightment</h3>
+									<p>Marmik Lama</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+		
+							  <figure class="product-style">
+								<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Great travel at desert</h3>
+									<p>Sanchit Howdy</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+		
+							  <figure class="product-style">
+								<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Life among the pirates</h3>
+									<p>Armor Ramsey</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+		
+							  <figure class="product-style">
+								<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Simple way of piece life</h3>
+									<p>Armor Ramsey</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+						 </div>
+					  </div>
+		
+					  <div id="technology" data-tab-content>
+						  <div class="grid">
+							  <figure class="product-style">
+								<img src="images/tab-item1.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Portrait Photography</h3>
+									<p>Adam Silber</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+		
+							  <figure class="product-style">
+								<img src="images/tab-item9.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>The Possibility of Somewhere</h3>
+									<p>Julia Day</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+		
+							  <figure class="product-style">
+								<img src="images/tab-item10.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>The Probability of Miracles</h3>
+									<p>Wendy Wunder</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+		
+							  <figure class="product-style">
+								<img src="images/tab-item11.jpg" alt="Books" class="product-item">
+								<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+								<figcaption>
+									<h3>Anatomy of Misfit</h3>
+									<p>Andrea Portes</p>
+									<div class="item-price">$ 40.00</div>
+								</figcaption>
+							</figure>
+						 </div>
+					  </div>
+		
+					</div>
+		
+				</div><!--inner-tabs-->
+					
+				</div>
+			</div>
+		</section>
+		
+<section id="special-offer" class="bookshelf">
+<div id="offer">
+	<div class="section-header align-center">
+		<div class="title">
+			<span>Grab your opportunity</span>
+		</div>
+		<h2 class="section-title">Books with offer</h2>
+	</div>
+</div>
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">	
+				<div class="product-list" data-aos="fade-up">
+					<div class="grid product-grid">				
+						<figure class="product-style">
+							<img src="images/product-item5.jpg" alt="Books" class="product-item">
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<figcaption>
+								<h3>Way of Happiness</h3>
+								<p>Ananda Comat</p>
+								<div class="item-price">
+								<span class="prev-price">$ 50.00</span>$ 40.00</div>
+							</figcaption>
+						</figure>
+					
+						<figure class="product-style">
+							<img src="images/product-item2.jpg" alt="Books" class="product-item">
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<figcaption>
+								<h3>Great travel at desert</h3>
+								<p>Sanchit Howdy</p>
+								<div class="item-price">
+								<span class="prev-price">$ 30.00</span>$ 38.00</div>
+							</figcaption>
+						</figure>
+					
+						<figure class="product-style">
+							<img src="images/product-item7.jpg" alt="Books" class="product-item">
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<figcaption>
+								<h3>Fashion System</h3>
+								<p>Kevin Spear</p>
+								<div class="item-price">
+								<span class="prev-price">$ 35.00</span>$ 45.00</div>
+							</figcaption>
+						</figure>
+					
+						<figure class="product-style">
+							<img src="images/product-item8.jpg" alt="Books" class="product-item">
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<figcaption>
+								<h3>Musical</h3>
+								<p>Karim Archad</p>
+								<div class="item-price">
+								<span class="prev-price">$ 25.00</span>$ 35.00</div>
+							</figcaption>
+						</figure>
+					</div><!--grid-->
+				</div>
+			</div><!--inner-content-->
+		</div>
+	</div>
+</section>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">				
+				<div class="footer-menu-list">
+					<div class="grid">
+
+						<div class="footer-item">
+						<div class="company-brand">
+							<img src="images/logo.png" alt="logo" class="footer-logo">
+						</div>
+						</div>
+
+						<div class="footer-menu">
+							<h5>About Us</h5>
+							<ul class="menu-list">
+								<li class="menu-item">
+									<a href="#">vision</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">articles </a>
+								</li>
+								<li class="menu-item">
+									<a href="#">careers</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">service terms</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">donate</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-menu">
+							<h5>Discover</h5>
+							<ul class="menu-list">
+								<li class="menu-item">
+									<a href="#">Home</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Books</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Authors</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Subjects</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Advanced Search</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-menu">
+							<h5>My account</h5>
+							<ul class="menu-list">
+								<li class="menu-item">
+									<a href="#">Sign In</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">View Cart</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">My Wishtlist</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Track My Order</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-menu">
+							<h5>Help</h5>
+							<ul class="menu-list">
+								<li class="menu-item">
+									<a href="#">Help center</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Report a problem</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Suggesting edits</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">Contact us</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div><!--inner-content-->
+		</div>
+	</div>
+</footer>
+<div id="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="copyright">
+					<div class="grid">
+						<p>© 2022 All right reserved.</p>
+					</div>
+				</div><!--grid-->
+			</div><!--footer-bottom-content-->			
+		</div>
+	</div>
+</div>
+
+	</body>
+</html>

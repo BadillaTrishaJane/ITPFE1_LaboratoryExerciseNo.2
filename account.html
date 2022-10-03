@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Book Store -account</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="account.css">
+
+
+
+	</head>
+	<body>
+		<header>
+			<img class="logo" src="images/logo.png " alt="logo">
+			<nav>
+				<ul class="nav_links">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="product.html">SHOP</a></li>
+					<li><a href="My Cart.html">MY CART</a></li>
+					<li><a href="account.html">ACCOUNT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="body">
+			<hr>
+			<div class="wrapper">
+				<div class="title-text">
+				   <div class="title login">
+					  Login Form
+				   </div>
+				   <div class="title signup">
+					  Registration Form
+				   </div>
+				</div>
+				<div class="form-container">
+				   <div class="slide-controls">
+					  <input type="radio" name="slide" id="login" checked>
+					  <input type="radio" name="slide" id="signup">
+					  <label for="login" class="slide login">Login</label>
+					  <label for="signup" class="slide signup">Registration</label>
+					  <div class="slider-tab"></div>
+				   </div>
+				   <div class="form-inner">
+					  <form action="#" class="login">
+						 <div class="field">
+							<input type="text" placeholder="Username" required>
+						 </div>
+						 <div class="field">
+							<input type="password" placeholder="Password" required>
+						 </div>
+						 <div class="pass-link">
+							<a href="#">Forgot password?</a>
+						 </div>
+						 <div class="field btn">
+							<div class="btn-layer"></div>
+							<input type="submit" value="Login">
+						 </div>
+						 <div class="signup-link">
+							Not a member? <a href="#register">Register now</a>
+						 </div>
+					  </form>
+					  <form action="connect1.php" method="post" class="signup">
+						 <div class="field">
+							<label for="First Name"></label>
+							<input type="text" name="firstname" placeholder="First Name" > <br>
+						 </div>
+						 <div class="field">
+							<label for="Middle Name"></label>
+							<input type="text" placeholder="Middle Name" id="Middle Name" name="middlename" >
+						 </div>
+						 <div class="field">
+							<label for="Last Name"></label>
+							<input type="text" placeholder="Last Name" id="Last Name" name="lastname" >
+						 </div>
+						 <div class="field">
+							
+							<label for="Gender"> <b>Select you Gender</b></label>
+							<select name="gender" class="field" required>
+								<option class="gender" value="male">Male</option>
+								<option class="gender" value="female">Female</option>
+								<option class="gender" value="other">Other</option>
+							</select>
+						 </div> <br> <br>
+
+						 <div class="field">
+							<label for="Username"></label>
+							<input type="text" placeholder="Username" id="Username" name="username" >
+						 </div>
+						 <div class="field">
+							<label for="Password"></label>
+							<input type="password" placeholder="Password" id="Password" name="pass" >
+						 </div>
+						 <div class="field">
+							<label for="Confirm Password"></label>
+							<input type="password" placeholder="Confirm password" id="Password" name="pass2" >
+						 </div>
+						 <div class="field btn">
+							<div class="btn-layer"></div>
+							<input type="submit" value="Signup" name="submit">
+						</div>
+						<div class="field btn">
+							<div class="btn-layer"></div>
+							<input type="reset" value="Reset" name="reset">
+						 </div>
+					  </form>
+				   </div>
+				</div>
+			 </div>
+			 <script>
+				const loginText = document.querySelector(".title-text .login");
+				const loginForm = document.querySelector("form.login");
+				const loginBtn = document.querySelector("label.login");
+				const signupBtn = document.querySelector("label.signup");
+				const signupLink = document.querySelector("form .signup-link a");
+				signupBtn.onclick = (()=>{
+				  loginForm.style.marginLeft = "-50%";
+				  loginText.style.marginLeft = "-50%";
+				});
+				loginBtn.onclick = (()=>{
+				  loginForm.style.marginLeft = "0%";
+				  loginText.style.marginLeft = "0%";
+				});
+				signupLink.onclick = (()=>{
+				  signupBtn.click();
+				  return false;
+				});
+			 </script>
+		</section>
+        
+		 </body>
+	</html>
